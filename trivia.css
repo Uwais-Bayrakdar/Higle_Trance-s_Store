@@ -1,0 +1,222 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HEADER */
+h1 {
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* BACK BUTTON */
+.go-back-home-div {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.go-back-home-btn {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: none;
+    background-color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.go-back-home-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* GAME CONTAINER */
+.game-container {
+    width: 90%;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+/* QUESTION */
+.question-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* RESULT MESSAGE */
+.result-msg {
+    font-size: 1.3rem;
+    color: #44c767;
+    font-weight: bold;
+}
+
+/* ANSWERS */
+.answer-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.answer-btn {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 45%;
+    max-width: 250px;
+}
+
+.answer-btn:hover {
+    background-color: #e6f7ff;
+    border-color: #00AEEF;
+}
+
+/* NEXT QUESTION */
+.next-question-div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next-question-btn {
+    background-color: #00AEEF;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.next-question-btn:hover {
+    background-color: #008FCC;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+/* DARK MODE — UNIVERSAL STYLING */
+body.dark-mode {
+    background-color: #121212;
+    color: #EDEDED;
+}
+
+/* Main containers and content boxes */
+body.dark-mode .container,
+body.dark-mode .product-card,
+body.dark-mode .cart-card,
+body.dark-mode .inv-card,
+body.dark-mode .game-container {
+    background-color: #1E1E1E;
+    color: #EDEDED;
+    border-color: #444;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Title bar */
+body.dark-mode .titlebox {
+    background-color: #1E1E1E;
+    border-bottom: 2px solid #aaa;
+}
+
+body.dark-mode .title {
+    color: #00C896;
+}
+
+/* All buttons */
+body.dark-mode button {
+    background-color: #444;
+    color: #F2F2F2;
+    border: 1px solid #777;
+}
+
+body.dark-mode button:hover {
+    background-color: #555;
+    transform: scale(1.03);
+    transition: all 0.2s ease;
+}
+/* Main menu buttons (circle style) */
+body.dark-mode .btns button {
+    background-color: #444;
+    border-color: #666;
+    color: #EDEDED;
+}
+
+body.dark-mode .btns button:hover {
+    background-color: #555;
+}
+
+/* Go back home button */
+body.dark-mode .go-back-home-btn {
+    background-color: #555;
+    color: #EDEDED;
+    border-bottom: 1px solid #555;
+}
+
+body.dark-mode .go-back-home-btn:hover {
+    background-color: #777;
+}
+
+/* Toggle dark mode button */
+body.dark-mode .dark-mode-toggle-btn {
+    background-color: #3C3C60;
+    color: #EDEDED;
+    border: 1px solid #777;
+}
+
+body.dark-mode .dark-mode-toggle-btn:hover {
+    background-color: #50507A;
+}
+
+/* Text color overrides */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .product-name,
+body.dark-mode .product-price,
+body.dark-mode .question-text,
+body.dark-mode .sign-up-or-log-in-welcome {
+    color: #EDEDED;
+}
+
+/* Dim images slightly */
+body.dark-mode img {
+    filter: brightness(0.85);
+}

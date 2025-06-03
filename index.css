@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #222222;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+/* FORM CARDS */
+.sign-up-card,
+.log-in-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid #cccccc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
+/* LABELS */
+.sign-up-name,
+.sign-up-pass,
+.log-in-name,
+.log-in-pass {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* INPUTS */
+input {
+    margin-top: 0.3rem;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+input:focus {
+    border-color: #00AEEF;
+    box-shadow: 0 0 5px #00AEEF;
+    outline: none;
+}
+
+/* BUTTONS */
+.sign-up-btn,
+.log-in-btn {
+    font-size: 1rem;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #00AEEF;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.sign-up-btn:hover,
+.log-in-btn:hover {
+    background-color: #008FCC;
+}
+
+/* WARNINGS */
+.sign-up-warning-msg,
+.log-in-warning-msg {
+    color: #FF4D4D;
+    font-size: 1rem;
+    min-height: 1.5rem;
+    margin-top: -0.5rem;
+}
+
+/* OPTIONAL - RESPONSIVE ADJUSTMENT
+@media (max-width: 500px) {
+    .sign-up-card,
+    .log-in-card {
+        max-width: 90%;
+    }
+} */

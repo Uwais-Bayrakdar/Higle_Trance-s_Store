@@ -1,0 +1,203 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    color: #222;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HEADER */
+h1 {
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* BACK BUTTON */
+.go-back-home-div {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.go-back-home-btn {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: none;
+    background-color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.go-back-home-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* PRODUCT GRID */
+.product-cards {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+}
+
+/* INDIVIDUAL CARD */
+.product-card {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+/* IMAGES */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+/* PRODUCT TEXT */
+.product-name {
+    font-size: 1.1rem;
+    margin: 0.8rem 0 0.4rem;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+/* BUTTON */
+.add-to-cart-btn {
+    background-color: #00AEEF;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #008FCC;
+}
+
+/* DARK MODE — UNIVERSAL STYLING */
+body.dark-mode {
+    background-color: #121212;
+    color: #EDEDED;
+}
+
+/* Main containers and content boxes */
+body.dark-mode .container,
+body.dark-mode .product-card,
+body.dark-mode .cart-card,
+body.dark-mode .inv-card,
+body.dark-mode .game-container {
+    background-color: #1E1E1E;
+    color: #EDEDED;
+    border-color: #444;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Title bar */
+body.dark-mode .titlebox {
+    background-color: #1E1E1E;
+    border-bottom: 2px solid #aaa;
+}
+
+body.dark-mode .title {
+    color: #00C896;
+}
+
+/* All buttons */
+body.dark-mode button {
+    background-color: #444;
+    color: #F2F2F2;
+    border: 1px solid #777;
+}
+
+body.dark-mode button:hover {
+    background-color: #555;
+    transform: scale(1.03);
+    transition: all 0.2s ease;
+}
+/* Main menu buttons (circle style) */
+body.dark-mode .btns button {
+    background-color: #444;
+    border-color: #666;
+    color: #EDEDED;
+}
+
+body.dark-mode .btns button:hover {
+    background-color: #555;
+}
+
+/* Go back home button */
+body.dark-mode .go-back-home-btn {
+    background-color: #555;
+    color: #EDEDED;
+    border-bottom: 1px solid #555;
+}
+
+body.dark-mode .go-back-home-btn:hover {
+    background-color: #777;
+}
+
+/* Toggle dark mode button */
+body.dark-mode .dark-mode-toggle-btn {
+    background-color: #3C3C60;
+    color: #EDEDED;
+    border: 1px solid #777;
+}
+
+body.dark-mode .dark-mode-toggle-btn:hover {
+    background-color: #50507A;
+}
+
+/* Text color overrides */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .product-name,
+body.dark-mode .product-price,
+body.dark-mode .question-text,
+body.dark-mode .sign-up-or-log-in-welcome {
+    color: #EDEDED;
+}
+
+/* Dim images slightly */
+body.dark-mode img {
+    filter: brightness(0.85);
+}
