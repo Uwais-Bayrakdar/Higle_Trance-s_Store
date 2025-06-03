@@ -46,4 +46,4 @@ This project helped me learn by doing what I love — and that’s how I get bet
 
 ## 🚀 Live Demo
 
-🔗 [https://uwais-bayrakdar.github.io/Higle_Trance-s-Store/](https://uwais-bayrakdar.github.io/Higle_Trance-s-Store/)
+🔗 [https://uwais-bayrakdar.github.io/Higle_Trance-s-Store/](https://uwais-bayrakdar.github.io/Higle_Trance-s_Store/)
