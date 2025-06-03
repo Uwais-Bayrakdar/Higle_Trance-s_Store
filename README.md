@@ -11,21 +11,39 @@ A pure JavaScript store simulation app with:
 
 > ⚡ Built as a front-end practice project using vanilla JS, HTML, and CSS.
 
+---
+
 ## 🔧 Features
 
-- Sign up / Log in (simulated accounts with localStorage)
-- Add to cart, buy products, and manage inventory
-- Fully styled UI with light/dark mode support
-- Grid layout adapts to all screen sizes
-- Trivia game built in for fun and interactivity
+- 🔐 Sign up / Log in (simulated accounts with localStorage)
+- 🛒 Add to cart, purchase products, and manage inventory
+- 🎨 Fully styled UI with light/dark mode support
+- 📱 Responsive layout with adaptive grid
+- 🎮 Built-in trivia game for fun and interactivity
+
+---
 
 ## 📸 Preview
 
 ![Screenshot](link-to-screenshot)
 
+---
+
 ## 🧠 Built By
 
 **Owais** — aspiring front-end developer & creative problem solver.
 
-I would like to say first of all this wasn't easy, it never was meant to be easy, but i loved doing this project, and i wanted it to be reality so bad, after doing the C project version of it (the first version), I liked it, but didn't like that there's no visaulity in it, so i decided to make it a website also, this is how i get better in coding, by doing the things i love as a challenge and not go to tutorial hell, although i definetly wasn't alone doing this, i was using ai, but only for logical things, about 90 to 95% of the code is from me, and the other 10-5% was from stuff i wasn't been able to do it alone, just because i lacked info about the function or localStorage, so yeah, i wasn't alone, and to be honest, i was doing the functional part only, i did let ai make the css part, just because i'm not thinking of becoming a web designer, nor do i hear about a functional website builder being a web designer also (it's rare), in a company i would either go to backend (will learn in the future), or javascript frameworks (most likely react/react native or node.js).
+> This wasn’t easy — and it wasn’t meant to be. But I loved every bit of it.  
+After building a C version of this store (with no visuals), I wanted to bring it to life as a real website.  
+Instead of falling into tutorial hell, I challenged myself to code it from scratch — only using AI when I truly needed help understanding a function or how `localStorage` worked.  
 
+Around **90–95% of the code** is mine.  
+The CSS styling was handled by AI since I’m focused more on becoming a **JavaScript/React developer** than a designer. I see myself either going toward **React/React Native** or possibly **Node.js** in the future.
+
+This project helped me learn by doing what I love — and that’s how I get better.
+
+---
+
+## 🚀 Live Demo
+
+🔗 [https://uwais-bayrakdar.github.io/Higle_Trance-s-Store/](https://uwais-bayrakdar.github.io/Higle_Trance-s-Store/)
