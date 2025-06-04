@@ -79,7 +79,7 @@ h1 {
 /* IMAGES */
 .product-card img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-bottom: 2px solid #ddd;
 }
 
