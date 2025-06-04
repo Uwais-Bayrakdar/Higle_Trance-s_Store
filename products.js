@@ -33,7 +33,7 @@ addToCartBtns.forEach(cartBtn => {
     quantitySpan.classList.add("product-quantity");
 
     if (!(productId in allQuantities)) {
-        allQuantities[productId] = 10;
+        allQuantities[productId] = 50;
         localStorage.setItem("product_quantities", JSON.stringify(allQuantities));
     }
     
