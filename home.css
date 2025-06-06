@@ -115,7 +115,7 @@ html, body {
 .dark-mode-toggle-btn {
     position: fixed;
     bottom: 1rem;
-    right: 1rem;
+    left: 1rem;
     z-index: 999;
     background-color: #00AEEF;
     color: white;
