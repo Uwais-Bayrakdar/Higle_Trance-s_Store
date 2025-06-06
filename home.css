@@ -18,7 +18,7 @@ html, body {
 .container {
     background-color: #ffffff;
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     padding: 2rem;
     border-radius: 20px;
     border: 2px solid #ccc;
@@ -125,10 +125,12 @@ html, body {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s ease;
+
 }
 
 .dark-mode-toggle-btn:hover {
     background-color: #008FCC;
+    transform: scale(1.03);
 }
 
 /* DARK MODE — UNIVERSAL STYLING */
@@ -168,7 +170,6 @@ body.dark-mode button {
 
 body.dark-mode button:hover {
     background-color: #555;
-    transform: scale(1.03);
     transition: all 0.2s ease;
 }
 /* Main menu buttons (circle style) */
@@ -197,7 +198,7 @@ body.dark-mode .go-back-home-btn:hover {
 body.dark-mode .dark-mode-toggle-btn {
     background-color: #3C3C60;
     color: #EDEDED;
-    border: 1px solid #777;
+    border: 1px solid #777; 
 }
 
 body.dark-mode .dark-mode-toggle-btn:hover {
@@ -218,4 +219,72 @@ body.dark-mode .sign-up-or-log-in-welcome {
 /* Dim images slightly */
 body.dark-mode img {
     filter: brightness(0.85);
+}
+
+@media (min-width: 1600px)
+{
+    .dark-mode-toggle-btn {
+        font-size: 40px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .btns button {
+        font-size: 27px;
+    }
+    
+    .log-out-btn {
+        font-size: 30px;
+    }
+
+    .welcome-user h3 {
+        font-size: 2.0rem;
+    }
+}
+
+@media (max-width: 1599px) and (min-width: 1040px)
+{ 
+    .dark-mode-toggle-btn {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+    
+    .btns button {
+        font-size: 23px;
+    }
+    .log-out-btn {
+        font-size: 25px;
+    }
+
+    .welcome-user h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 1039px) and (min-width: 676px)
+{
+        .dark-mode-toggle-btn {
+        font-size: 23px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+    
+    .btns button {
+        font-size: 19px;
+    }
+
+    .log-out-btn {
+        font-size: 20px;
+    }
+
+    .welcome-user h3 {
+        font-size: 1.5rem;
+    }
 }
